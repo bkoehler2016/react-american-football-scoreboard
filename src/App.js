@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
-import Timer from "./timer";
 
 function App() {
   // TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
@@ -43,7 +42,7 @@ function App() {
           >
             Home Field Goal
           </button>
-          <button onClick={event => sethomeScore(0)}>Reset</button>
+          <button onClick={() => sethomeScore(0)}>Reset</button>
         </div>
         <div className="awayButtons">
           <button
@@ -58,7 +57,7 @@ function App() {
           >
             Away Field Goal
           </button>
-          <button onClick={event => setawayScore(0)}>Reset</button>
+          <button onClick={() => setawayScore(0)}>Reset</button>
         </div>
       </section>
     </div>
