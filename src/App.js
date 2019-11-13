@@ -8,6 +8,11 @@ function App() {
   const [homeScore, sethomeScore] = useState(0);
   const [awayScore, setawayScore] = useState(0);
 
+  const reset = e => {
+    sethomeScore(0);
+    setawayScore(0);
+  };
+
   return (
     <div className="container">
       <section className="scoreboard">
@@ -42,7 +47,6 @@ function App() {
           >
             Home Field Goal
           </button>
-          <button onClick={() => sethomeScore(0)}>Reset</button>
         </div>
         <div className="awayButtons">
           <button
@@ -57,7 +61,9 @@ function App() {
           >
             Away Field Goal
           </button>
-          <button onClick={() => setawayScore(0)}>Reset</button>
+          <button className="awayButtons__fieldGoal" onClick={reset}>
+            Reset
+          </button>
         </div>
       </section>
     </div>
