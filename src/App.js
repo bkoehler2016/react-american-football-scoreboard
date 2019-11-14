@@ -23,6 +23,12 @@ function App() {
     setawayScore(0);
   };
 
+  const resetTimer = e => {
+    if (setTimer < timer) {
+      setTimer(45);
+    }
+  };
+
   return (
     <div className="container">
       <section className="scoreboard">
@@ -109,7 +115,10 @@ function App() {
             Away 2 points
           </button>
           <button className="awayButtons__fieldGoal" onClick={reset}>
-            Reset
+            Reset scores
+          </button>
+          <button className="awayButtons__fieldGoal" onClick={resetTimer}>
+            Reset Timer
           </button>
         </div>
       </section>
