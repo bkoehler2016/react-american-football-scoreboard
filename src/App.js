@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import BottomRow from "./BottomRow";
+import { setTimeout } from "timers";
 
 function App() {
   // TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
@@ -56,7 +57,7 @@ function App() {
             className="homeButtons__touchdown"
             onClick={() => sethomeScore(homeScore + 1)}
           >
-            Home Extra Point
+            Home PAT
           </button>
           <button
             className="homeButtons__touchdown"
@@ -94,7 +95,7 @@ function App() {
             className="awayButtons__fieldGoal"
             onClick={() => setawayScore(awayScore + 1)}
           >
-            Away Extra Point
+            Away PAT
           </button>
           <button
             className="awayButtons__fieldGoal"
