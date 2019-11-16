@@ -111,7 +111,7 @@ function App() {
             Away 2 points
           </button>
           <button className="awayButtons__fieldGoal" onClick={reset}>
-            Reset scores
+            Reset Screen
           </button>
         </div>
       </section>
