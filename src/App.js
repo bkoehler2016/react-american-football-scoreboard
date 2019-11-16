@@ -20,8 +20,9 @@ function App() {
   }, [timer]);
 
   const reset = e => {
-    sethomeScore(0);
-    setawayScore(0);
+    // sethomeScore(0);
+    // setawayScore(0);
+    document.location.reload();
   };
 
   return (
